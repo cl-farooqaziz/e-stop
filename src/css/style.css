@@ -1,0 +1,315 @@
+/* ===============Banner============== */
+
+.banner {
+  background-image: url(../images/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner-txt {
+  text-align: center;
+}
+
+/* ===============Changes============== */
+
+header .btn-p:hover img {
+  filter: invert(1);
+}
+
+.banner .btn-p:hover,
+header .btn-p:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+header .btn-w:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.bttns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===============Content============== */
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contentImg {
+  text-align: center;
+}
+
+.content .btn-p {
+  color: #fff;
+}
+
+.content .btn-p:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #fd9802;
+}
+
+.content .btn-s:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid var(--secondary-color);
+}
+
+/* ===============Platform============== */
+
+.platform {
+  background: url(../images/folds/platform-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.caseStdy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caseStdy a:hover {
+  color: #fd9802;
+}
+
+/* ===============Rate============== */
+
+.rateCol {
+  width: 29%;
+  margin-top: 20px;
+}
+
+.rateCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratCard {
+  position: relative;
+}
+
+.ratCard::before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  width: 2px;
+  background-color: #fd9802;
+  height: 100%;
+}
+
+.ratCard::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  width: 2px;
+  background-color: #fd9802;
+  height: 100%;
+}
+
+/* ===============Cater============== */
+
+.cater .solutionsImg img {
+  width: 90%;
+  margin-top: -25px;
+  margin-left: -30px;
+}
+
+.solutionsTxt h5 {
+  position: relative;
+}
+
+.solutionsTxt h5::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 150px;
+  background-color: #000;
+  left: 160px;
+  top: 14px;
+}
+
+.cater .btn-w:hover {
+  background-color: #24303e;
+  color: #fff;
+}
+
+.cater .btn-s:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+/* ===============Photography============== */
+
+.photography {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.photographyImg img {
+  width: 330px;
+  height: auto;
+}
+
+.phtgrphycntnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.phtgrphycntnt img{
+  width: 50%;
+}
+
+.photography .btn-p:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fd9802;
+}
+
+.photography .btn-w:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* ===============Buyability============== */
+
+.buyability {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.buyability .btn-p {
+  color: #fff;
+}
+
+.buyability .btn-p:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #fd9802;
+}
+
+.buyability .btn-s:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid var(--secondary-color);
+}
+
+/* ===============Should============== */
+
+.should {
+  display: flex;
+  align-items: center;
+}
+
+.shouldImg {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.should .btn-p {
+  color: #fff;
+}
+
+.should .btn-p:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #fd9802;
+}
+
+.should .btn-s:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid var(--secondary-color);
+}
+
+/* ===============Convinced============== */
+
+.convinced {
+  background: url(../images/folds/convinced-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.convinced .btn-p:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fd9802;
+}
+
+.convinced .btn-w:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* ===============Contact============== */
+
+.contct-form form {
+  border: 2px solid var(--primary-color);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contct-form form input,
+.contct-form form textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  font-family: var(--primary-fonts);
+}
+
+.contct-form form input {
+  height: 50px;
+}
+.contct-form form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contct-form form input:focus,
+.contct-form form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary-color);
+}
+
+.contct-form form button {
+  height: 40px;
+  border-radius: 0;
+  color: #fff;
+}
+
+.contct-form form button:hover {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: #000;
+}
