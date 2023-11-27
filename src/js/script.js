@@ -52,6 +52,17 @@ $(document).ready(function () {
   }
 });
 
+// =============Testimonials==============
+
+$(".opinion-slider").slick({
+  infinite: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  speed: 300,
+});
+
 // =============Other==============
 
 new WOW().init();

@@ -1,7 +1,8 @@
 /* ===============Banner============== */
 
 .banner {
-  background-image: url(../images/bg-img.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,79 +15,60 @@
   text-align: center;
 }
 
-/* ===============Changes============== */
+/* ===============whoWe============== */
 
-header .btn-p:hover img {
-  filter: invert(1);
-}
-
-.banner .btn-p:hover,
-header .btn-p:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid var(--primary-color);
-}
-
-header .btn-w:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.bttns {
+.whoWe {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
+  padding: 50px 0;
 }
 
-/* ===============Content============== */
+.whoTxt {
+  text-align: left;
+}
 
-.content {
-  height: 100vh;
+.whoWe .short {
+  width: 80%;
+  margin-right: auto;
+}
+
+.whoImg {
+  text-align: right;
+}
+
+.whoImg img {
+  width: 42%;
+  margin-top: -20%;
+  margin-right: 2%;
+}
+
+/* ===============WhatWe============== */
+
+.whatWe {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
-.contentImg {
-  text-align: center;
+.whatTxt {
+  text-align: right;
 }
 
-.content .btn-p {
-  color: #fff;
+.whatWe .short {
+  width: 80%;
+  margin-left: auto;
 }
 
-.content .btn-p:hover {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid #fd9802;
+.whatImg {
+  text-align: left;
 }
 
-.content .btn-s:hover {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid var(--secondary-color);
+.whatImg img {
+  width: 50%;
+  margin-top: -8%;
 }
 
-/* ===============Platform============== */
-
-.platform {
-  background: url(../images/folds/platform-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.caseStdy {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.caseStdy a:hover {
-  color: #fd9802;
-}
-
-/* ===============Rate============== */
+/* ===============Services============== */
 
 .rateCol {
   width: 29%;
@@ -107,7 +89,7 @@ header .btn-w:hover {
   position: absolute;
   right: -50px;
   width: 2px;
-  background-color: #fd9802;
+  background-color: #006fff;
   height: 100%;
 }
 
@@ -116,8 +98,55 @@ header .btn-w:hover {
   position: absolute;
   left: -50px;
   width: 2px;
-  background-color: #fd9802;
+  background-color: #006fff;
   height: 100%;
+}
+
+/* ===============WhyChoose============== */
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contentImg {
+  text-align: center;
+}
+
+.content .btn-p {
+  color: #fff;
+}
+
+.content .btn-p:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #006fff;
+}
+
+.content .btn-s:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid var(--secondary-color);
+}
+
+/* ===============CaseStudy============== */
+
+.platform {
+  background: url(../images/folds/platform-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.caseStdy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caseStdy a:hover {
+  color: #006fff;
 }
 
 /* ===============Cater============== */
@@ -152,119 +181,167 @@ header .btn-w:hover {
   color: #24303e;
 }
 
-/* ===============Photography============== */
+/* ===============packegs============== */
 
-.photography {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.photographyImg img {
-  width: 330px;
-  height: auto;
-}
-
-.phtgrphycntnt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.phtgrphycntnt img{
-  width: 50%;
-}
-
-.photography .btn-p:hover {
+.pckgs-card {
   background-color: transparent;
-  color: #fff;
-  border: 1px solid #fd9802;
+  padding: 30px 25px;
+  border: 2px solid;
 }
 
-.photography .btn-w:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+.pckgs-contact li:hover a {
+  color: #2d2d2d;
 }
 
-/* ===============Buyability============== */
-
-.buyability {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.pckgs-contact i {
+  color: #006fff;
 }
 
-.buyability .btn-p {
-  color: #fff;
-}
-
-.buyability .btn-p:hover {
-  background-color: transparent;
+.pckgs-contact li:hover i {
   color: #000;
-  border: 1px solid #fd9802;
 }
 
-.buyability .btn-s:hover {
+.pckgs-cntnt {
+  background-color: #f2f2f2;
+}
+
+.pckgs-list {
+  height: 300px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+.pckgs-list > li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--primary-fonts);
+}
+
+.pckgs-list > li::before {
+  content: "";
+  display: block;
+  background-image: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/f7b42f6d-f5d1-4d59-cc90-c877b0971300/public);
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  bottom: 0;
+}
+
+.pckgs-card .btns {
+  width: 100%;
+}
+
+/* ===============Testimonials============== */
+
+.opinion-slide {
+  height: 75vh;
+}
+
+.opinion-cntn {
+  position: relative;
+}
+
+.quotes-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.quotes-img img {
+  width: 150px;
+}
+
+.opinion-cntn img.profile-img {
+  width: 60px;
+}
+
+.rating i {
+  color: #ffc400;
+  font-size: 14px;
+}
+
+.slick-prev:before {
+  content: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/210c8aeb-9076-4a19-94cf-24909de53f00/public);
+}
+
+.slick-next:before {
+  content: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/eea7f41a-d0a0-48dc-888c-5795cb93e600/public);
+}
+
+.slick-prev {
+  left: 50px;
+}
+
+.slick-next {
+  right: 50px;
+}
+
+.slick-prev,
+.slick-next {
+  top: 100%;
+}
+
+/* ===============Faqs============== */
+
+.accordionCustom .accordion-item {
+  border: 1px solid #006fff;
   background-color: transparent;
-  color: #000;
-  border: 1px solid var(--secondary-color);
+  margin-bottom: 15px;
+  border-radius: 0;
 }
 
-/* ===============Should============== */
+.accordionCustom .accordion-item.active {
+  z-index: -2;
+  border-color: var(--primary-color);
+}
 
-.should {
-  display: flex;
+.accordion-button {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--primary-fonts);
+  border: 2px solid #006fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: #000;
+  font-size: 15px;
+  font-family: var(--primary-fonts);
+}
+
+.accordionCustom .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: #a04aaa;
+  background: linear-gradient(83deg, #597bea 0, #a04aaa 100%);
+  box-shadow: none;
+  border-radius: 0;
+  font-family: var(--primary-font);
+  font-size: 17px;
+  border-bottom: 0;
+  background-size: 400%;
+  animation: 5s infinite gradient;
+}
+
+.accordionCustom .accordion-button::after {
+  background-image: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/07e87938-f12f-4b92-731f-7a8f5fde1400/public);
+  transform: rotate(0);
+}
+
+.accordionCustom .accordion-button:not(.collapsed)::after {
+  background-image: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/d4c22232-74dd-4030-6020-b7e6c69f5000/public);
   align-items: center;
-}
-
-.shouldImg {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.should .btn-p {
-  color: #fff;
-}
-
-.should .btn-p:hover {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid #fd9802;
-}
-
-.should .btn-s:hover {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid var(--secondary-color);
-}
-
-/* ===============Convinced============== */
-
-.convinced {
-  background: url(../images/folds/convinced-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.convinced .btn-p:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fd9802;
-}
-
-.convinced .btn-w:hover {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  height: 7px;
 }
 
 /* ===============Contact============== */
@@ -312,4 +389,29 @@ header .btn-w:hover {
   background-color: transparent;
   border: 1px solid var(--secondary-color);
   color: #000;
+}
+
+/* ===============Changes============== */
+
+header .btn-p:hover img {
+  filter: invert(1);
+}
+
+.banner .btn-p:hover,
+header .btn-p:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+header .btn-w:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.bttns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
